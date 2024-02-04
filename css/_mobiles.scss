@@ -1,0 +1,104 @@
+.responsive_section {
+  padding: 15rem 0vw 55vh 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include media("<phone") {
+    padding: 5rem 0vw 55vh 6vw;
+  }
+  h2 {
+    width: 70vw;
+    color: white;
+    filter: $dropShadow;
+    font-size: 3rem;
+    @include media("<tablet") {
+      font-size: 2.5rem;
+    }
+    @include media("<phone") {
+      font-size: 2rem;
+      position: relative;
+      top: 20vh;
+    }
+  }
+}
+
+.mockup {
+  width: 70vw;
+  z-index: -1;
+  right: 10vw;
+  position: relative;
+  filter: drop-shadow(0.7px 0.9px 8.1px rgba(0, 25, 80, 0.023))
+    drop-shadow(1.8px 2.2px 12.2px rgba(0, 25, 80, 0.034))
+    drop-shadow(3.3px 4px 16.2px rgba(0, 25, 80, 0.041))
+    drop-shadow(5.1px 6.2px 20.8px rgba(0, 25, 80, 0.049))
+    drop-shadow(7.6px 9.3px 26.6px rgba(0, 25, 80, 0.056))
+    drop-shadow(11.2px 13.6px 34.9px rgba(0, 25, 80, 0.067))
+    drop-shadow(19px 23px 54px rgba(0, 25, 80, 0.205));
+  img {
+    width: 100%;
+  }
+  @include media("<phone") {
+    position: absolute;
+  }
+}
+.mobiles {
+  position: relative;
+  height: 100vh;
+  padding-top: 40vh;
+  padding-bottom: 15vh;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+
+    .screensContainer {
+      position: relative;
+      display: flex;
+      z-index: -1;
+    }
+    .screens {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      width: 90vw;
+      @include media("<tablet") {
+        width: 100vw;
+      }
+      @include media("<phone") {
+        grid-template-columns: 1fr 1fr;
+      }
+      .img_item {
+        margin: 1.3rem;
+        width: 20vw;
+        aspect-ratio: 3/5.5;
+        @include media("<tablet") {
+          margin: 0.4rem;
+          width: 23vw;
+        }
+        @include media("<phone") {
+          width: 90%;
+          margin: auto;
+        }
+
+        img {
+          box-shadow: 0.7px 0.9px 8.1px rgba(0, 0, 0, 0.023),
+            1.8px 2.2px 12.2px rgba(0, 0, 0, 0.034),
+            3.3px 4px 16.2px rgba(0, 0, 0, 0.041),
+            5.1px 6.2px 20.8px rgba(0, 0, 0, 0.049),
+            7.6px 9.3px 26.6px rgba(0, 0, 0, 0.056),
+            11.2px 13.6px 34.9px rgba(0, 0, 0, 0.067),
+            19px 23px 54px rgba(0, 0, 0, 0.09);
+          border-radius: 20px;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+.imgToTop {
+  margin-top: -5vh !important;
+}

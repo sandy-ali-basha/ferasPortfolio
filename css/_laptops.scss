@@ -1,0 +1,32 @@
+.laptops {
+  -moz-column-count: 2;
+  -moz-column-gap: 0px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 0px;
+  column-count: 2;
+  column-gap: 0px;
+  width: 100vw;
+  padding-top: 10vh;
+  > :nth-child(1) {
+    margin-top: -10vh;
+  }
+  img {
+    width: 49.5vw;
+    border-radius: 10px;
+    padding: 5px;
+    object-fit: cover;
+    display: inline-block;
+    transition: all 0.5s;
+  }
+}
+.Macbook {
+  width: 60vw;
+  position: relative;
+  z-index: -1;
+  left: 30vw;
+  transform: scale(1.2) scaleX(-1);
+  @include media("<phone") {
+    width: 70vw;
+    left: 15vw;
+  }
+}
