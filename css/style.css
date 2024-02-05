@@ -334,7 +334,7 @@
 }
 
 .mockup {
-  width: 70vw;
+  width: 62vw;
   z-index: -1;
   right: 10vw;
   position: relative;
@@ -658,6 +658,7 @@ header section .title .header-contact-icons {
   justify-content: space-between;
   width: 15%;
   transform: translateY(10vh);
+  gap: 1vw;
 }
 @media (max-width: 449px) {
   header section .title .header-contact-icons {
@@ -671,6 +672,7 @@ header section .title .header-contact-icons a {
   color: #f0f4f8;
 }
 header section .title .header-contact-icons a img {
+  width: 3.5vw;
   cursor: pointer;
 }
 @media (max-width: 899px) {

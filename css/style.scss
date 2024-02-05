@@ -240,6 +240,7 @@ header {
         justify-content: space-between;
         width: 15%;
         transform: translateY(10vh);
+        gap: 1vw;
         @include media("<phone") {
           width: 100%;
           justify-content: center;
@@ -249,6 +250,8 @@ header {
           text-decoration: none;
           color: $white;
           img {
+            width: 3.5vw;
+
             cursor: pointer;
             @include media("<tablet") {
               margin-inline: 1rem;
